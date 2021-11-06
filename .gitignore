@@ -2,3 +2,5 @@
 *.jpeg
 *.png
 *.jpg
+/api/static/avatars/
+/api/static/house_photos/
