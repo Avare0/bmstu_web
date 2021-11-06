@@ -1,0 +1,9 @@
+django
+django-filter
+django_extensions
+psycopg2
+Pillow
+djangorestframework
+djangorestframework_simplejwt
+drf_yasg
+django-rest-swagger
