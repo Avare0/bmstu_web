@@ -10,5 +10,5 @@
 # Use-case диаграмма
 ![](https://i.imgur.com/S8uHzwg.jpeg)
 
-# ER-диагрмма
+# ER-диагрaмма
 ![](https://i.imgur.com/RkQ2Ncz.jpg)
