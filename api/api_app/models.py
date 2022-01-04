@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 
-# Create your models here.
+# Create your repos here.
 class Countries(models.Model):
     name = models.CharField('Нахвание', max_length=50)
 
@@ -75,11 +75,11 @@ class House_Facilities(models.Model):
     house = models.ForeignKey(Houses, on_delete=models.CASCADE, verbose_name='Дом', related_name='house_facilities')
     facility = models.ForeignKey(Facilities, on_delete=models.CASCADE)
 #
-# class Messages(models.Model):
-#     from_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='from_user_message')
-#     to_user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='to_user_message')
-#     message = models.TextField()
-#     date = models.DateTimeField(auto_now=True)
+# class Messages(repos.Model):
+#     from_user = repos.ForeignKey(User, on_delete=repos.CASCADE, related_name='from_user_message')
+#     to_user = repos.ForeignKey(User, on_delete=repos.CASCADE, related_name='to_user_message')
+#     message = repos.TextField()
+#     date = repos.DateTimeField(auto_now=True)
 
 
 

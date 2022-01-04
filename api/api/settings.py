@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'api_app',
+'corsheaders',
     'rest_framework',
    'drf_yasg',
 ]
@@ -46,13 +47,19 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_WHITELIST = [
+'http://localhost:3000',
+'http://127.0.0.1:3000'
+]
 ROOT_URLCONF = 'api.urls'
 
 TEMPLATES = [
@@ -150,7 +157,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static')
 
 from datetime import timedelta
 
-...
+JWT_AUTH = {
+'JWT_RESPONSE_PAYLOAD_HANDLER': 'api_app.utils.jwt_response_payload_handler',
+}
+
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=1),

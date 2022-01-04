@@ -1,0 +1,64 @@
+
+    h5 {
+        margin-top: 100px;
+        color: black;
+        font-size: 96px !important;
+        text-align: center;
+        font-style: normal;
+        font-weight: 800 !important;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .quote {
+        margin-top: 60px;
+        text-align: center;
+        color: black;
+        font-size: 48px;
+    }
+    .quote h3 {
+        font-style: italic;
+        font-size: 30px;
+    }
+    .quote h2 {
+
+        font-size: 48px;
+    }
+    .background {
+        background: transparent;
+        color: black !important;
+        /*background: url('http://localhost/static/main_index.jpg');*/
+    }
+    /*.container, button, a {*/
+    /*    background: transparent !important;*/
+    /*}*/
+
+    a, .nolink, .auth {
+        color: black !important;
+        border-color: black !important;
+    }
+    .nav-item a {
+        color: black !important;
+    }
+    .nav-item a:after {
+        background-color: transparent !important;
+    }
+
+    .lk {
+        background-color: white;
+        color: black;
+    }
+
+    .dropdown .wrapper a {
+        color: black !important;
+    }
+    .lk {
+        color: black;
+        box-shadow: inset 0px 0px 0px 3px black
+    }
+    .dropdown {
+        box-shadow: inset 0px 0px 0px 3px black;
+    }
+    .background {
+        background-color: transparent;
+        background-size: 100% 100%;
+    }

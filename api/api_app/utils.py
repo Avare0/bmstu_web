@@ -19,3 +19,22 @@ def custom_exception_handler(exc, context):
         response = Response(data=resp, status=code, headers=response.headers)
 
     return response
+def jwt_response_payload_handler(token, user=None, request=None):
+    response = exception_handler(exc, context)
+    if response is not None:
+        resp = RESPONSE_FORMAT.copy()
+        resp['message'] = response.data if 'detail' not in response.data.keys() else response.data['detail']
+        resp['status'] = 'success'
+        code = response.status_code
+        resp['data'] = {
+            **token,
+            'user': {
+                'username': user.username,
+                'id': user.id,
+                'first_name': user.first_name,
+                'last_name': user.last_name,
+                'photo': user.photo
+            }
+        }
+        response = Response(data=resp, status=code, headers=response.headers)
+    return response
