@@ -12,3 +12,7 @@
 
 # ER-диагрaмма
 ![](https://i.imgur.com/RkQ2Ncz.jpg)
+
+# Скриншоты
+![](https://i.imgur.com/bZr7K2y.jpg)
+![](https://i.imgur.com/OIZ2ni1.jpg)
