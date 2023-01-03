@@ -26,7 +26,7 @@ class User(AbstractUser):
     sex = models.CharField(max_length=1, choices=SEXES)
     city = models.ForeignKey(Cities, on_delete=models.SET_DEFAULT, default=1)
     type = models.CharField(max_length=7, choices=TYPES, default='admin')
-    photo = models.ImageField(upload_to='avatars/')
+    photo = models.ImageField(upload_to='avatars/', null=True)
 
 
 class Houses(models.Model):

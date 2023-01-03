@@ -196,11 +196,10 @@ class HousesView(APIView):
         form = HouseCreateSerializer(data=request.data)
 
         availiable_facilities = set(self.facilities_repository.values_list('id'))
-        # print(availiable_facilities)
 
         if len(availiable_facilities.intersection(set(facilities))) < len(facilities):
             resp['status'] = 'error'
-            resp['message'] = f'Invalid facility ids {availiable_facilities}'
+            resp['message'] = f'Invalid facility ids'
             code = 400
             return Response(data=resp, status=code)
 
@@ -573,7 +572,6 @@ class HouseEditView(APIView):
         serialized = HouseUpdateSerializer(data=request.data)
 
         if not serialized.is_valid():
-            print(serialized.errors)
             resp['status'] = 'error'
             resp['message'] = 'Incorrect fields'
             code = 400

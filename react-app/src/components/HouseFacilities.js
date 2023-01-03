@@ -7,7 +7,7 @@ const HouseFacilities = ({facilities}) => {
                         {facilities.map(facility =>
                             <div className="facility" key={facility.facility.id}>
                                     <div className="facility_img">
-                                        <img src={window.static_url+ facility.facility.file} alt=""/>
+                                        <img src={window.static_url + facility.facility.file} alt=""/>
                                     </div>
                                     <p>{facility.facility.name}</p>
                                 </div>

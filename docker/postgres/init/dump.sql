@@ -100,7 +100,7 @@ COPY public.api_app_house_facilities (id, facility_id, house_id) FROM stdin;
 -- Data for Name: api_app_house_photos; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.api_app_house_photos (id, file, house_id) FROM stdin;
+COPY public.api_app_house_photos (id, photo, house_id) FROM stdin;
 3	91adfb74078363.5c20be2c04a05_WGxxoNJ_aIb9W1F_Qe41DNw.jpg	2
 4	1600948784_interior_74_PsZe3so_jLOcpRo_a9WbHKf.jpg	2
 5	3d2a1b1d.jpeg	3

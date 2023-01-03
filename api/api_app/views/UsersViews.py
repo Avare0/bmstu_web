@@ -110,12 +110,12 @@ class UsersView(APIView):
 
         if 'id' in request.GET:
             data = self.repository.filter(id=int(request.GET['id']))[0]
-            data = UserSerializer(data)
+            data = UserSerializer(data).data
             resp['data'] = data
             return Response(data=resp, status=code)
 
         resp['status'] = 'error'
-        resp['message'] = 'Not such method exists'
+        resp['message'] = 'No such method exists'
         code = 400
         return Response(data=resp, status=code)
 

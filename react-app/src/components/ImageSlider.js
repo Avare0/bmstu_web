@@ -5,7 +5,7 @@ const ImageSlider = ({images}) => {
 
     let res = [];
     for(let i = 0; i < images.length; i++)
-        res.push({url: 'http://localhost/static' + images[i].photo});
+        res.push({url: window.static_url + images[i].photo});
     console.log(res);
     return (
     <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-around'}}>

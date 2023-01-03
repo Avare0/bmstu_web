@@ -3,14 +3,6 @@ from ..models import Orders
 class OrdersRepository(BaseRepository):
     model = Orders
 
-    def get_all_owner_orders(self, owner_id):
-        return self.sql(f"""
-        select o.* from api_app_orders o
-        left join api_app_houses h
-        on h.id = o.house_id
-        where h.owner_id = {owner_id}
-        """)
-
     def check_availiable_date(self, dt_from, dt_till, house_id):
         orders = self.sql(
             f"""

@@ -17,7 +17,7 @@ RESPONSE_FORMAT = {
 
 class OrdersView(APIView):
     repository = OrdersRepository()
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
     house_repository = HousesRepository()
 
 

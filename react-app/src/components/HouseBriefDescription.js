@@ -14,19 +14,19 @@ const HouseBriefDescription = ({data}) => {
                     <div style={{'display': 'flex'}}>
                         <div className="house_sleep">
                             <div className="house_img_sleep">
-                                <img src={window.static_url+ 'house_description/sleep.png'} alt=""/>
+                                <img src={window.static_url+ '/house_description/sleep.png'} alt=""/>
                             </div>
                             <p className="amount">{ data.beds_amount }</p>
                         </div>
                         <div className="house_sleep">
                             <div className="house_img_sleep">
-                                <img src={window.static_url+ 'house_description/user.png'} alt=""/>
+                                <img src={window.static_url+ '/house_description/user.png'} alt=""/>
                             </div>
                             <p className="amount">{data.guests_amount}</p>
                         </div>
                         <div className="house_sleep">
                             <div className="house_img_sleep">
-                                <img src={window.static_url+ 'house_description/shower.png'} alt=""/>
+                                <img src={window.static_url+ '/house_description/shower.png'} alt=""/>
                             </div>
                             <p className="amount">{data.bathrooms_amount}</p>
                         </div>

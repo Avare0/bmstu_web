@@ -16,7 +16,7 @@ const DeleteButton = ({id, owner_id}) => {
     }}} onClick={e=> rep.deleteHouse(id, redirect)}>
 
              {(store.user.id == owner_id || store.user.type =='admin')&&<div style={{ width: '50px', height: '50px'}}>
-                <img src={window.static_url+'bin.png'} alt="" style={{
+                <img src={window.static_url+'/bin.png'} alt="" style={{
                     width: '30px',
                     height: '30px',
                     marginLeft: 'auto',

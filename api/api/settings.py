@@ -101,7 +101,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'airbnb',
         'USER': 'postgres',
-        'PASSWORD': os.environ.get('SQL_PASSWORD', ''),
+        'PASSWORD': os.environ.get('SQL_PASSWORD', '1576'),
         'HOST': os.environ.get('SQL_HOST', 'localhost'),
         'PORT': os.environ.get('SQL_PORT', '5432'),
     }

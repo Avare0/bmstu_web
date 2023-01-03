@@ -7,3 +7,4 @@ djangorestframework
 djangorestframework_simplejwt
 drf_yasg
 django-rest-swagger
+django-cors-headers
